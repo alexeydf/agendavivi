@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #e2e2e2;
+}
+a{
+    text-decoration: none;
+}
+input{
+    -webkit-appearance: none;
+    outline: 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+select{
+    /*-webkit-appearance: none;*/
+    outline: 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+header{
+    background-color: #161616;
+    padding-top: 10px;
+}
+
+.logo{
+    display: flex;
+    margin-bottom: 8px;
+    align-items: flex-end;
+    padding: 10px;
+}
+.logo img{
+    width: 180px;
+    display: block;
+    opacity: .5;
+}
+.logo i{
+    color: #f8f8f8;
+    font-size: 2.5rem;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #f8f8f8;
+    margin-left: 8px;
+}
+.logo h1 span{
+    font-size: .8rem;
+    color: #9e9e9e;
+}
+
+.form-login{
+    width: 350px;
+    margin: auto;
+    padding: 20px 15px 40px 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.form-login h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #6e6e6e;
+}
+.form-login form{
+    display: grid;
+
+}
+.form-login input{
+    margin-bottom: 10px;
+    border: 1px solid #9e9e9e;
+    padding: 8px;
+    border-radius: 5px;
+}
+.form-login .btn{
+    grid-column: 1 / 2;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.form-cad-user{
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+.btn-menu{
+    color: #AC7A6B;
+}
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #161616;
+    padding: 8px 10px;
+    background-color: #AC7A6B;
+    font-size: .7rem;
+    border-radius: 5px;
+    margin: 0 4px;
+}
+.user-ativo{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f3f3f;
+    padding: 8px 10px;
+    margin-top: 10px;
+    color: #6e6e6e;
+}
+.user-ativo span{
+    color: #dadada;
+    text-transform: uppercase;
+}
+.user-ativo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9e9e9e;
+}
+
+.titulo{
+    padding: 0 10px;
+    text-align: center;
+}
+.titulo h3{
+    font-weight: 400;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.pesquisar form{
+    padding: 15px 0;   
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.pesquisar input{
+    border: 1px solid #c0c0c0;
+    padding: 9px 10px;
+    grid-column: 1 / 4;
+    border-radius: 0;
+    
+}
+.btn-pesquisar{
+    border: none;
+    padding: 10px 15px;
+    background-color: #3f3f3f;
+    color: #dadada;
+    font-size: 1.1rem;
+    /*border-radius: 5px;*/
+    grid-column: 4 / 5;
+}
+
+.agendados{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.agendados-card{
+    width: 350px;
+    margin: auto;
+    border: 1px solid #646464;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.agendados-card ul{
+    list-style: none;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    padding: 5px;
+    color: #f5f5f5;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.agendados-card span{
+    color: #9e9e9e;
+    font-weight: 400;
+}
+.agendados-card li{
+    margin: 3px 0;
+}
+.agendados-card a{
+    text-decoration: none;
+    background-color: #FFCA47;
+    color: #222222;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+.agendados-card a:hover{
+  color: #FFCA47;
+  background-color: #222222;
+}
+
+.form-cad{
+    padding: 0 8px;
+    display: grid;
+    
+    row-gap: 2px;
+}
+.form-cad input{
+    border: 1px solid #c0c0c0;
+    padding: 9px 10px;
+}
+.btn{
+  border: none;
+  text-transform: uppercase;
+  background-color: #FFCA47;
+  color: #222222;
+  padding: 8px 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.btn:hover{
+  background-color: #222222;
+  color: #FFCA47;
+}
+
+.form-edit{
+  padding: 0 10px;
+}
+.form-edit form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.id-form-edit{
+    display: none;
+}
+.form-edit input{
+    border: 1px solid #c0c0c0;
+    padding: 9px 10px;
+    /*color: #8d0000;
+    font-weight: 900;*/
+}
+.form-edit .btn{
+    grid-column: 1 / 3;
+}
+.form-edit .edit-obs{
+    grid-column: 1 / 3;
+}
+
+.center{
+  padding: 10px 5px;
+}
+.center form{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.center select{
+  padding: 7px 15px;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.calendario{
+  border: 1px solid #222222;
+}  
+.calendario h4{
+  border-bottom: 1px solid #222222;
+  text-align: center;
+  /*padding: 8px;*/
+  text-transform: uppercase;
+  background-color: #FFCA47;
+}
+/*.calendario .card{
+  display: flex;
+  flex-wrap: wrap;
+}*/
+.calendario .dia-servico{
+  border: 1px solid #747474;
+  text-align: center;
+  padding: 8px;
+  width: 50%;
+}
+.dia{
+  font-weight: 600;
+  margin-bottom: 3px;
+  color: #3f3f3f;
+}
+.servico{
+  text-transform: uppercase;
+}
+
+.dia-servico:nth-child(2n){
+  background-color: #cecece;
+}
+.center .btn-pesquisar{
+  border: none;
+  padding: 10px 15px;
+  background-color: #3f3f3f;
+  color: #dadada;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tabela{
+  border: 1px solid #8b9787;
+  border-collapse: collapse;
+  width:100%;
+  font-size: 0.9rem;
+}
+.tabela th, .tabela td{
+  border: 1px solid #8b9787;
+  padding: 8px;
+}
+
+
+.status{
+  background-color: #DFF0D8;
+  color: #8b9787;
+  padding: 10px ;
+  border-radius: 5px;
+  margin: 20px 10px;
+  transition: all .5s;
+  opacity: 1;
+  text-align: center;
+}
+.status-erro{
+  background-color: #ffbebc;
+  color: #8d1713;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin: 20px 0 0 0;
+  transition: all .5s;
+  opacity: 1;
+  text-align: center;
+}
+.status span{
+  font-weight: 600;
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
